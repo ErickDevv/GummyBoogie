@@ -1,11 +1,10 @@
-// Terminal.js
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import code from "./code";
 import "./Terminal.css";
 
 const Terminal = () => {
   const [currentText, setCurrentText] = useState("");
-  const [typing, setTyping] = useState(true);
+  const [typing] = useState(true);
 
   useEffect(() => {
     let index = 0;

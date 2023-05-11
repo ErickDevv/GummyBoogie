@@ -4,6 +4,24 @@ import icon from "../public/icon.png";
 import { SVGProps } from "react";
 import vscode from "../public/visual-studio-code.svg";
 
+const title = `
+ ██████╗ ██╗   ██╗███╗   ███╗███╗   ███╗██╗   ██╗    ██████╗  ██████╗  ██████╗  ██████╗ ██╗███████╗
+██╔════╝ ██║   ██║████╗ ████║████╗ ████║╚██╗ ██╔╝    ██╔══██╗██╔═══██╗██╔═══██╗██╔════╝ ██║██╔════╝
+██║  ███╗██║   ██║██╔████╔██║██╔████╔██║ ╚████╔╝     ██████╔╝██║   ██║██║   ██║██║  ███╗██║█████╗  
+██║   ██║██║   ██║██║╚██╔╝██║██║╚██╔╝██║  ╚██╔╝      ██╔══██╗██║   ██║██║   ██║██║   ██║██║██╔══╝  
+╚██████╔╝╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║   ██║       ██████╔╝╚██████╔╝╚██████╔╝╚██████╔╝██║███████╗ 
+ ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝   ╚═╝       ╚═════╝  ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝╚══════╝
+`;
+
+const integrations = `
+██╗███╗   ██╗████████╗███████╗ ██████╗ ██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗
+██║████╗  ██║╚══██╔══╝██╔════╝██╔════╝ ██╔══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+██║██╔██╗ ██║   ██║   █████╗  ██║  ███╗██████╔╝███████║   ██║   ██║██║   ██║██╔██╗ ██║███████╗
+██║██║╚██╗██║   ██║   ██╔══╝  ██║   ██║██╔══██╗██╔══██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║
+██║██║ ╚████║   ██║   ███████╗╚██████╔╝██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║███████║
+╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+`;
+
 function BytesizeGithub(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -25,60 +43,54 @@ const App = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-start pb-20 a">
-      <div className="w-full items-center h-full bg-[rgb(0,2,13,0.9)] absolute top-0 z-50"></div>
+        <div className="w-full items-center h-full bg-[rgb(0,2,13,0.9)] absolute top-0 z-50"></div>
         <nav className="w-full h-14 bg-none top-0 absolute z-50">
-          <img src={icon} alt="icon" className="h-8 text-white absolute top-6 left-6 logo" />
-          <button onClick={() => window.open("https://github.com/ErickDevv/Gummy-Boogie-Theme")}>
-          <BytesizeGithub className="h-8 w-8 text-white absolute top-6 right-6 github" />
+          <img
+            src={icon}
+            alt="icon"
+            className="h-8 text-white absolute top-6 left-6 logo"
+          />
+          <button
+            onClick={() =>
+              window.open("https://github.com/ErickDevv/Gummy-Boogie-Theme")
+            }
+          >
+            <BytesizeGithub className="h-8 w-8 text-white absolute top-6 right-6 github" />
           </button>
         </nav>
-          <pre className="text z-50 "> ██████╗ ██╗   ██╗███╗   ███╗███╗   ███╗██╗   ██╗    ██████╗  ██████╗  ██████╗  ██████╗ ██╗███████╗<br/>
-██╔════╝ ██║   ██║████╗ ████║████╗ ████║╚██╗ ██╔╝    ██╔══██╗██╔═══██╗██╔═══██╗██╔════╝ ██║██╔════╝<br/>
-██║  ███╗██║   ██║██╔████╔██║██╔████╔██║ ╚████╔╝     ██████╔╝██║   ██║██║   ██║██║  ███╗██║█████╗  <br/>
-██║   ██║██║   ██║██║╚██╔╝██║██║╚██╔╝██║  ╚██╔╝      ██╔══██╗██║   ██║██║   ██║██║   ██║██║██╔══╝  <br/>
-╚██████╔╝╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║   ██║       ██████╔╝╚██████╔╝╚██████╔╝╚██████╔╝██║███████╗<br/> ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝   ╚═╝       ╚═════╝  ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝╚══════╝<br/><br/>
-          </pre>
+        <pre className="text z-50 ">{title}</pre>
 
-          <h2 className="description z-50 text-center px-[20px]">
-            A collection of themes composed with a gummy explosion of color for programming time.</h2>
-          <Terminal></Terminal>
-          
+        <h2 className="description z-50 text-center px-[20px]">
+          A collection of themes composed with a gummy explosion of color for
+          programming time.
+        </h2>
+        <Terminal></Terminal>
       </div>
-
 
       <div className="bg-[#00020d] pb-10">
         <br></br>
         <br></br>
         <br></br>
         <div className="flex items-center justify-center">
-        <pre className=" text-[#4CD95F] integrations">
-██╗███╗   ██╗████████╗███████╗ ██████╗ ██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗<br></br>
-██║████╗  ██║╚══██╔══╝██╔════╝██╔════╝ ██╔══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝<br></br>
-██║██╔██╗ ██║   ██║   █████╗  ██║  ███╗██████╔╝███████║   ██║   ██║██║   ██║██╔██╗ ██║███████╗<br></br>
-██║██║╚██╗██║   ██║   ██╔══╝  ██║   ██║██╔══██╗██╔══██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║<br></br>
-██║██║ ╚████║   ██║   ███████╗╚██████╔╝██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║███████║<br></br>
-╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝<br></br>
-                                                                                              
-        </pre>
+          <pre className=" text-[#4CD95F] integrations">{integrations}</pre>
         </div>
 
-  
-      <br></br>
-    <div className="flex w-full justify-center">
-      <button className="tech" onClick={() => window.open("https://marketplace.visualstudio.com/items?itemName=ErickDevv.gummy-boogie-theme")}>
-      <img src={vscode} alt="vscode"/>
-
-      </button>
-
-
-
-    </div>
-    
-  
-
+        <br></br>
+        <div className="flex w-full justify-center">
+          <button
+            className="tech"
+            onClick={() =>
+              window.open(
+                "https://marketplace.visualstudio.com/items?itemName=ErickDevv.gummy-boogie-theme"
+              )
+            }
+          >
+            <img src={vscode} alt="vscode" />
+          </button>
+        </div>
       </div>
     </>
   );
-}
+};
 
 export default App;

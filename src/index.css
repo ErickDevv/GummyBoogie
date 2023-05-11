@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../public/Inconsolata-Regular.ttf") format("truetype");
+}
+
 .a {
   background-image: url("../public/hao-wang-pVq6YhmDPtk-unsplash.jpg");
   background-repeat: no-repeat;
@@ -16,11 +21,13 @@
   line-height: 1;
   font-size: 6.7px;
   padding-top: 100px;
+  font-family: "Inconsolata";
 }
 
 .integrations {
   line-height: 1;
   font-size: 6.7px;
+  font-family: "Inconsolata";
 }
 
 .tech {
