@@ -57,7 +57,7 @@ Error generating stack: `+i.message+`
 `,className:"text-white-500"},{text:`
 `,className:"text-white-500"},{text:"export default ",className:"text-[#d94c76]"},{text:"Select",className:"text-[#4CD95F]"},{text:";",className:"text-white-500"}];const Dd=()=>{const[e,t]=nt.useState(""),[n]=nt.useState(!0);return nt.useEffect(()=>{let r=0,l=1,i=0,o="";const u=()=>{if(r<Qu.length){const{text:s,className:c}=Qu[r],h=s[i];i===0&&(o+=`<span class="${c}">`),h===`
 `?(o+="</span><br />",l+=1,o+=`<span class="line-number">${l}</span> `,i+=1):(o+=h,i+=1),i===s.length&&(o+="</span>",r+=1,i=0),t(o),setTimeout(u,0)}};n&&(o=`<span class="line-number">${l}</span> `,u())},[n]),D.jsx("div",{className:"z-50",children:D.jsxs("div",{className:"terminal",children:[D.jsxs("div",{className:"buttons",children:[D.jsx("button",{className:"close"}),D.jsx("button",{className:"minimize"}),D.jsx("button",{className:"maximize"})]}),D.jsxs("div",{children:[D.jsx("pre",{className:"code-editor",dangerouslySetInnerHTML:{__html:e}})," "]})]})})},Rd="/GummyBoogie/assets/icon-4c8b0358.png",Fd="/GummyBoogie/assets/visual-studio-code-666b6929.svg",Od=`
-██████╗  ██╗   ██╗███╗   ███╗███╗   ███╗██╗   ██╗    ██████╗  ██████╗  ██████╗  ██████╗ ██╗███████╗
+ ██████╗ ██╗   ██╗███╗   ███╗███╗   ███╗██╗   ██╗    ██████╗  ██████╗  ██████╗  ██████╗ ██╗███████╗
 ██╔════╝ ██║   ██║████╗ ████║████╗ ████║╚██╗ ██╔╝    ██╔══██╗██╔═══██╗██╔═══██╗██╔════╝ ██║██╔════╝
 ██║  ███╗██║   ██║██╔████╔██║██╔████╔██║ ╚████╔╝     ██████╔╝██║   ██║██║   ██║██║  ███╗██║█████╗  
 ██║   ██║██║   ██║██║╚██╔╝██║██║╚██╔╝██║  ╚██╔╝      ██╔══██╗██║   ██║██║   ██║██║   ██║██║██╔══╝  
